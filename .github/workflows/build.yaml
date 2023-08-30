@@ -14,6 +14,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            ls
+            free -h > checkram.txt
             touch test.txt
             echo "toan" >> test.txt
